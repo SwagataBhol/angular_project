@@ -11,8 +11,9 @@ export class TableRowComponent implements OnInit {
   @Output() passevent= new EventEmitter()
   
  
-  
   constructor() {
+    console.log(this.userData)
+  
    }
 
   ngOnInit(): void {

@@ -1,4 +1,14 @@
 table{
+    /* display: flex;
+    justify-content: center;
+    justify-items: stretch; */
     height: auto;
-    width: auto;
+    width: 100%;
+    background-color: palevioletred;
+}
+
+tbody{
+    display: flex;
+    justify-content: center;
+    justify-items: stretch;
 }

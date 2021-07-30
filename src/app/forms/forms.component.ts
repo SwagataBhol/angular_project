@@ -21,6 +21,7 @@ export class FormsComponent implements OnInit {
   }
   deleteValue(e:any){
     let ele=e.parentElement.parentElement
+    // console.log(index)
     
   
   }

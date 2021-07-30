@@ -1,15 +1,27 @@
-/* form{
+form{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    /* margin-right: 20%; */
+    margin-bottom: 5%;
     height: 35px;
     width:auto;
-    border-radius: 7px;
-} */
+    border-radius: 10px;
+}
 h1{
     color: cornsilk;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/* header{
+footer{
     display: flex;
     justify-content: center;
-} */
+    background-color: plum;
+    color: royalblue;
+    font-size: 30px;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+input{
+    margin-right: 1%;
+}
