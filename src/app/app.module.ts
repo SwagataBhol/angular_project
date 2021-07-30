@@ -3,14 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+// import {UsersModule} from './users/users.module';
+import { FormsComponent } from './forms/forms.component';
+import { TableComponent } from './table/table.component';
+import { TableRowComponent } from './table-row/table-row.component';
+import { GrandTotalComponent } from './grand-total/grand-total.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormsComponent,
+    TableComponent,
+    TableRowComponent,
+    GrandTotalComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule  
   ],
   providers: [],
   bootstrap: [AppComponent]

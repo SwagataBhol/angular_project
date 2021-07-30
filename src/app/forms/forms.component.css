@@ -1,0 +1,15 @@
+/* form{
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    width:auto;
+    border-radius: 7px;
+} */
+h1{
+    color: cornsilk;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* header{
+    display: flex;
+    justify-content: center;
+} */

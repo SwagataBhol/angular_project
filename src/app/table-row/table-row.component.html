@@ -1,0 +1,28 @@
+
+<table>
+    <tr>
+        <th>----</th>
+        <th>----</th>
+        <th>----</th>
+        <th>----</th>
+    </tr>
+    <tr  *ngFor="let index of userData">
+        <td>{{index.item}}</td>
+        <td>{{index.unit}}</td>
+        <td>{{index.price}}</td>
+        <td>{{index.unit*index.price}}</td>
+        <td><button type="button" #edit (click)="editElement($event.target,index)">edit</button></td>
+        <td><button type="button" (click)="delteElement($event.target,index)">delete</button></td>
+        
+    </tr>
+  
+</table>    
+
+<!-- <footer *ngIf="userData[0]">
+    <app-grand-total [userData]="userData"></app-grand-total> 
+</footer>
+ -->
+
+
+
+    
