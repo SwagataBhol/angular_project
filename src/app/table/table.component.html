@@ -1,19 +1,16 @@
 
-<table>
-    <tr>
-       
+<table >
+
+       <thead>
         <th>index</th>
         <th>unit</th>
         <th>price</th>
         <th>total</th>
         <th>edit</th>
         <th>delete</th> 
-    
-</tr>
-    <tbody>
-        
-        
-        <app-table-row *ngFor="let index of Items"  [index]="index" (deleteEvent)="deleteItem($event)" (editEvent)="editItem($event)" ></app-table-row>
-    </tbody>
-    
+       </thead>
+           
+        <tbody>
+            <app-table-row *ngFor="let index of Items"  [index]="index" (deleteEvent)="deleteItem($event)" (editEvent)="editItem($event)" ></app-table-row>
+        </tbody>  
 </table>

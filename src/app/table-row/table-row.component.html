@@ -1,24 +1,10 @@
-
-    <!-- <tr>
-       
-            <th>index</th>
-            <th>unit</th>
-            <th>price</th>
-            <th>total</th>
-            <th>edit</th>
-            <th>delete</th> 
-        
-    </tr> -->
-        
     <tr >
         <td>{{index.item}}</td>
         <td>{{index.unit}}</td>
         <td>{{index.price}}</td>
         <td>{{index.unit*index.price}}</td>
         <td><button type="button" #edit  (click)="editElement($event.target,index)">edit</button></td>
-        <td><button type="button"  (click)="delteElement($event.target,index)">delete</button></td> <br>
-        
-        
+        <td><button type="button"  (click)="delteElement($event.target,index)">delete</button></td>
     </tr>
   
   
