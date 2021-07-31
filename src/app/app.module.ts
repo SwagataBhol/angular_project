@@ -8,7 +8,7 @@ import { FormsComponent } from './forms/forms.component';
 import { TableComponent } from './table/table.component';
 import { TableRowComponent } from './table-row/table-row.component';
 import { GrandTotalComponent } from './grand-total/grand-total.component'
-
+import {FormsModule} from "@angular/forms"
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,8 @@ import { GrandTotalComponent } from './grand-total/grand-total.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule  
+    AppRoutingModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

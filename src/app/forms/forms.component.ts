@@ -18,6 +18,7 @@ export class FormsComponent implements OnInit {
     
     let obj={item:titem,unit:tunit,price:tprice}
     this.Items.push(obj)
+    console.log(obj)
     
   }
  

@@ -6,10 +6,14 @@ table{
     height: auto;
     width: 100%;
     background-color: palevioletred;
+    border-collapse: separate;
 }
 
 tbody{
     display: flex;
     justify-content: center;
     justify-items: stretch;
+    flex-direction: column;
+    /* justify-items: center; */
+
 }
