@@ -46,9 +46,7 @@ export class TableComponent implements OnInit {
       let ind=this.Items.indexOf(index)
       this.Items[ind].unit=ele.childNodes[1].textContent
       this.Items[ind].price=ele.childNodes[2].textContent
-      //for edit any empty value
-    ele.childNodes[1].textContent=this.Items[ind].unit
-    ele.childNodes[2].textContent=this.Items[ind].price
+
       console.log("after edit ",this.Items[ind])
       e.textContent="edit"
       

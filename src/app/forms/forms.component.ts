@@ -15,13 +15,22 @@ export class FormsComponent implements OnInit {
     
   }
   getValue(titem:string,tunit:string,tprice:string){
+    if(titem!=="" && tunit !== "" && tprice !== "")
+    {
+      let obj={item:titem,unit:tunit,price:tprice}
+      this.Items.push(obj)
+      console.log(obj)
+    }
+    else
+    {
+        alert("Fields should not be empty..")
+    }
     
-    let obj={item:titem,unit:tunit,price:tprice}
-    this.Items.push(obj)
-    console.log(obj)
+    
+    // form.resetForm()
     
   }
- 
+  
 
   ngOnInit(): void {
     
