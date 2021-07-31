@@ -7,14 +7,11 @@
     <input type="text"  #input3 class="form" placeholder="enter the quantity" >
     <button type="reset" (click)="getValue(input1.value,input2.value,input3.value)">Add</button>
     
-   <!-- <app-table></app-table> -->
-   
-        <!-- <app-table-row [userData]="userData" (passevent)="deleteValue($event)"></app-table-row>  -->
-        <!-- <app-table-row *ngFor="let index of userData" [userData]="index" (passevent)="deleteValue($event)"></app-table-row>  -->
+  
 </form>
-<app-table [userData]="userData"></app-table>
+<app-table [Items]="Items"></app-table>
 <footer>
-    <app-grand-total [userData]="userData"></app-grand-total> 
-    <h1>{{userData}}</h1>
+    <app-grand-total [Items]="Items"></app-grand-total> 
+   
 </footer>
 

@@ -7,7 +7,7 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class TableComponent implements OnInit {
 
-  @Input() userData:any[]=[]
+  @Input() Items:any[]=[]
 
   
   constructor() { 
@@ -15,5 +15,5 @@ export class TableComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 import{data} from 'src/app/data'
 
 @Component({
@@ -7,24 +7,20 @@ import{data} from 'src/app/data'
   styleUrls: ['./forms.component.css']
 })
 export class FormsComponent implements OnInit {
-  userData:data[]=[]
-  total=0
+  // @Output() passValue=new EventEmitter
+  Items:data[]=[]
+  
 
   constructor() { 
-    console.log("this.userData")
+    
   }
   getValue(titem:string,tunit:string,tprice:string){
     
     let obj={item:titem,unit:tunit,price:tprice}
-    this.userData.push(obj)
+    this.Items.push(obj)
     
   }
-  deleteValue(e:any){
-    let ele=e.parentElement.parentElement
-    // console.log(index)
-    
-  
-  }
+ 
 
   ngOnInit(): void {
     

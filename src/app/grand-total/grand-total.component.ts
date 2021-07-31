@@ -7,7 +7,7 @@ import { Component, OnInit,Input} from '@angular/core';
   styleUrls: ['./grand-total.component.css']
 })
 export class GrandTotalComponent implements OnInit {
-  @Input() userData:any=[]
+  @Input() Items:any=[]
   
   total=0
   
@@ -19,10 +19,10 @@ export class GrandTotalComponent implements OnInit {
   }
   calculation(){
     this.total=0
-    for(let i=0;i< this.userData.length;i++)
+    for(let i=0;i< this.Items.length;i++)
     {
-    this.total+=this.userData[i].unit*this.userData[i].price;
-    console.log(this.userData)
+    this.total+=this.Items[i].unit*this.Items[i].price;
+    console.log(this.Items)
     }
 
     return this.total
