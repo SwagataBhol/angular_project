@@ -8,6 +8,7 @@ import { Component, OnInit,Input } from '@angular/core';
 export class TableComponent implements OnInit {
 
   @Input() Items:any[]=[]
+  @Input() myStorage:any
 
   
   constructor() { 
@@ -20,6 +21,10 @@ export class TableComponent implements OnInit {
   deleteItem(currentItem:object){
      let ind=this.Items.indexOf(currentItem)
     this.Items.splice(ind,1)
+
+    this.myStorage.setItem("Items", JSON.stringify(this.Items))
+    this.Items = JSON.parse(this.myStorage.getItem('Items') || '{}')
+    
   }
   
   editItem(passEventValue:any){
@@ -44,13 +49,18 @@ export class TableComponent implements OnInit {
       ele.childNodes[2].contentEditable=false
       ele.childNodes[3].textContent=ele.childNodes[1].textContent*ele.childNodes[2].textContent
       let ind=this.Items.indexOf(index)
+      this.Items[ind].item=ele.childNodes[0].textContent
       this.Items[ind].unit=ele.childNodes[1].textContent
       this.Items[ind].price=ele.childNodes[2].textContent
 
       console.log("after edit ",this.Items[ind])
       e.textContent="edit"
       
-    }
+      this.myStorage.setItem("Items", JSON.stringify(this.Items))
+      this.Items = JSON.parse(this.myStorage.getItem('Items') || '{}')
 
+      
+    }
+    
   }
 }
